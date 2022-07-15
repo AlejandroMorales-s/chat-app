@@ -39,6 +39,32 @@
     }
 }
 
+@mixin logout {
+    border: 2.5px solid $red;
+    color: $white;
+    font-weight: $semiBold;
+    font-size: 1.6rem;
+    padding: calc($spacing / 4) calc($spacing / 2);
+    background-color: $red;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    @include transition(all);
+    &:hover{
+        background-color: transparent;
+        cursor: pointer;
+        color: $red;
+    }
+}
+
+@mixin shadow {
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.4);
+}
+
 @mixin spinner {
     .spinner {
         width: 2.25rem;

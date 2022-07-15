@@ -9,3 +9,25 @@
 .bold{
     font-weight: $semiBold;
 }
+.active-nav-link .navbar-icon{
+    color: $primary !important;
+}
+.active-menu{
+    color: $primary
+}
+.hide-menu{
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    @include transition(all);
+}
+.show-menu{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    @include transition(all);
+}
