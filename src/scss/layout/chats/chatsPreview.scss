@@ -1,0 +1,48 @@
+.archived-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    margin: 1rem 0;
+    .archived-icon{
+        font-size: 1.8rem;
+    }
+    p{
+        font-weight: $semiBold;
+    }
+}
+
+.chat-preview-container{
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    .chat-preview-avatar-container{
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        overflow: hidden;
+        height: 5rem;
+        min-width: 5rem;
+    }
+    .chat-preview-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        .chat-preview-name{
+            font-weight: $medium;
+            font-size: 1.6rem;
+        }
+        .chat-preview-message{
+            font-size: 1.4rem;
+            color: $darkGray;
+        }
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}

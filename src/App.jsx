@@ -1,14 +1,16 @@
 import './App.scss';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Login from './pages/Login'
-import Home from './pages/Home'
+import Chats from './pages/Chats'
+import Users from './pages/Users';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/chats' element={<Chats/>}/>
+        <Route path='/users' element={<Users/>}/>
       </Routes>
     </BrowserRouter>
   );
