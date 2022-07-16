@@ -16,6 +16,23 @@
     }
 }
 
+@mixin input{
+    background-color: $gray;
+    border: none;
+    height: 3.5rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    font-size: 1.4rem;
+    padding: 0 3.5rem;
+    width: 100%;
+    &:focus{
+        outline: none;
+    }
+}
+
 @mixin btn {
     border: 2.5px solid $primary;
     color: $white;
