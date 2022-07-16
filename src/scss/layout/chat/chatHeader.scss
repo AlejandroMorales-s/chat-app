@@ -1,0 +1,32 @@
+.chat-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    .chat-header-return-icon{
+        font-size: 2rem;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        .header-profile-container{
+            height: 3.5rem;
+            width: 3.5rem;
+            border-radius: 50%;
+            border: 2px solid $primary;
+            overflow: hidden;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    .chat-header-options-icon{
+        font-size: 2.25rem;
+    }
+}
