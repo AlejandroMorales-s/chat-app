@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import {ImUsers} from 'react-icons/im';
 import {RiContactsBook2Fill} from 'react-icons/ri';
@@ -7,37 +6,42 @@ import {BsFillChatFill} from 'react-icons/bs';
 
 export default function Navbar() {
 
-    const {logged,user} = useSelector(state => state.auth) // funcion que nos permite leer del estado global
+    const navbarButtons = [
+        {
+            id: 1,
+            name: 'Chats',
+            icon: <BsFillChatFill className='navbar-icon'/>,
+            link: '/chats'
+        },
+        {
+            id: 2,
+            name: 'Contacts',
+            icon: <RiContactsBook2Fill className='navbar-icon'/>,
+            link: '/contacts'
+        },
+        {
+            id: 3,
+            name: 'Users',
+            icon: <ImUsers className='navbar-icon'/>,
+            link: '/users'
+        }
+    ];
+
     return (
         <nav className='navbar-container'>
-            <div className='navbar-button'>
-                <NavLink 
-                    className={({isActive}) => isActive ? 'active-nav-link': undefined} 
-                    to="/chats"
-                >
-                    <BsFillChatFill className='navbar-icon'/>
-                </NavLink>
-                <p>Chats</p>
-            </div>
-            <div className='navbar-button'>
-                <NavLink 
-                    className={({isActive}) => isActive ? 'active-nav-link': undefined} 
-                    to="/contacts"
-                >
-                    <RiContactsBook2Fill className='navbar-icon'/>
-                </NavLink>
-                <p>Contacts</p>
-            </div>
-            <div className='navbar-button'>
-                <NavLink 
-                    className={({isActive}) => isActive ? 'active-nav-link': undefined} 
-                    to="/users"
-                >
-                    <ImUsers className='navbar-icon'/>
-                </NavLink>
-                <p>Users</p>
-            </div>
-            {logged&&<p>{user.name}</p>}
+            {navbarButtons.map(button => {
+                return (
+                    <div key={button.id} className='navbar-button'>
+                        <NavLink 
+                            className={({isActive}) => isActive ? 'active-nav-link': undefined} 
+                            to={button.link}
+                        >
+                            {button.icon}
+                        </NavLink>
+                        <p>{button.name}</p>
+                    </div>
+                )
+            })}
         </nav>
     )
 }
