@@ -8,16 +8,25 @@
 
 //* Layout
 //* ==================================================
+//* Login
 @import './scss/layout/login/loginForm.scss';
 @import './scss/layout/login/loginContainer.scss';
 @import './scss/layout/modal/modal.scss';
+//* Navbar
 @import './scss/layout/navbar/navbar.scss';
+//* Header
 @import './scss/layout/header/headerContainer.scss';
 @import './scss/layout/header/header.scss';
+//* Hamburger Menu
 @import './scss/layout/header/hamburgerMenu.scss';
+//* Search input
 @import './scss/layout/searchInput/searchInput.scss';
+//* Chats
 @import './scss/layout/chats/chatsContainer.scss';
 @import './scss/layout/chats/chatsPreview.scss';
+//* Chat
 @import './scss/layout/chat/chatHeader.scss';
 @import './scss/layout/chat/chatInputArea.scss';
 @import './scss/layout/chat/chatBg.scss';
+//* Settings
+@import './scss/layout/settings/userProfile.scss';
