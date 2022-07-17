@@ -9,11 +9,7 @@ export default function HamburgerMenu({hide}) {
             <Link to='/settings' className='hamburger-menu-item'>
                 <AiTwotoneSetting className='hamburger-menu-icon'/>
                 <p>Settings</p>
-            </Link>        
-            <div className='hamburger-menu-item'>
-                <BsMoonFill className='hamburger-menu-icon'/>
-                <p>Dark mode</p>
-            </div>        
+            </Link>   
             <button className='logout-button'>
                 Logout
             </button>
