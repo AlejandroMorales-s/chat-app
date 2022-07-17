@@ -19,6 +19,7 @@
         width: 100%;
         .chat-input{
             @include input;
+            background-color: $white;
         }
         .chat-input-icon{
             position: absolute;
@@ -53,7 +54,7 @@
         cursor: pointer;
         .chat-input-button-icon{
             font-size: 2rem;
-            color: $lightGray;
+            color: $white;
             transform: translateX(0.2rem);
             -webkit-transform: translateX(0.2rem);
             -moz-transform: translateX(0.2rem);
