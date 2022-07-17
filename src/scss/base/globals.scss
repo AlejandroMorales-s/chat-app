@@ -38,6 +38,9 @@ body{
         border: 2px solid $primary;
     }
 }
+.dark-mode .user-message{
+    background-color: #0f1729;
+}
 .dark-mode {
     background-color: #0a0f1c;
 }

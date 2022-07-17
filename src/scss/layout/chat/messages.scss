@@ -1,0 +1,42 @@
+.logged-user-message-container,
+.user-message-container{
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+.logged-user-message-container{
+    display: flex;
+    justify-content: right;
+}
+.logged-user-message,
+.user-message{
+    position: relative;
+    padding: 1.5rem;
+    background-color: $primary;
+    border-radius: 1rem;
+    width: fit-content;
+    max-width: 60%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    .message-hour,
+    .message-hour-logged{
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.25rem;
+        font-size: 0.9rem;
+        color: $darkGray;
+    }
+    .message-hour-logged{
+        color: $gray;
+    }
+}
+.user-message{
+    background-color: $lightGray;
+}
+.logged-user-message{
+    p{
+        color: $lightGray;
+    }
+}
