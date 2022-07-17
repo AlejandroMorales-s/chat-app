@@ -8,7 +8,12 @@ export default function ChatInputArea() {
         <div className='chat-input-bg'>
             <div className='chat-input-area-container'>
                 <div className='chat-input-container'>
-                    <input className='chat-input' type="text" placeholder="Type a message..."/>
+                    <input 
+                        id='chat-input' 
+                        className='chat-input' 
+                        type="text" 
+                        placeholder="Type a message..."
+                    />
                     <BiHappy className='chat-input-icon emojis-icon'/>
                     <AiOutlinePaperClip className='chat-input-icon archives-icon'/>
                 </div>

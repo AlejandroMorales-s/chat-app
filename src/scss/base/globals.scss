@@ -2,39 +2,57 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
-*{
+*, *:before, *:after{
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
     font-family: $font;
 }
-*, *:before, *:after{
-    box-sizing: inherit;
-}
 body{
-    background-color: $white;
     overflow-x: hidden;
 }
-h1,h2,h3,h4{
-    margin: 0;
+@for $i from 1 through 4 {
+    h#{$i}{
+        font-size: nth($fontSize, $i);
+        margin: 0;
+        color: $raisinBlack;
+    }
+    .dark-mode h#{$i}{
+        color: $white;
+    }
 }
+.dark-mode p, .dark-mode svg{
+    color: $lightGray;
+    fill: $lightGray;
+}
+.dark-mode #search-input, .dark-mode #chat-input{
+    @if search-input{
+        background-color: $lightGray;
+        color: $raisinBlack;
+    }
+    background-color: #0a0f1c;
+    border: 2px solid $gray;
+    color: $gray;
+    &:focus{
+        outline: none;
+        border: 2px solid $primary;
+    }
+}
+.dark-mode {
+    background-color: #0a0f1c;
+}
+.dark-mode #chat-bg{
+    @include chatBg($light-theme: false);
+}
+.dark-mode .hamburger-menu{
+    background-color: #0f1729;
+    border-color: $darkGray;
+} 
 img{
     max-width: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-h1{
-    font-size: 2.2rem;
-    color: $raisinBlack;
-}
-h2{
-    font-size: 2rem;
-}
-h3{
-    font-size: 1.8rem;
-}
-h4{
-    font-size: 1.6rem;
 }
 p{
     font-size: 1.4rem;

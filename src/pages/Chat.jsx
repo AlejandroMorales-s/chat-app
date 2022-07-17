@@ -6,7 +6,7 @@ export default function Chat() {
     return (
         <>
             <ChatHeader/>
-            <div className='chat-bg'></div>
+            <div id='chat-bg' className='chat-bg'></div>
             <ChatInputArea/>
         </>
     )

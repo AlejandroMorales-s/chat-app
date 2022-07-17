@@ -1,4 +1,5 @@
 import './App.scss';
+import theme from './localStorage';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Login from './pages/Login'
 import Chats from './pages/Chats'
@@ -6,8 +7,13 @@ import Users from './pages/Users';
 import Chat from './pages/Chat';
 import Contacts from './pages/Contacts';
 import Settings from './pages/Settings';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    theme(localStorage.getItem('theme'));
+  }, [])
+  
   return (
     <BrowserRouter>
       <Routes>

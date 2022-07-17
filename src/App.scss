@@ -1,9 +1,9 @@
 //* Base
 //* ==================================================
 @import './scss/base/variables.scss';
+@import './scss/base/mixins.scss';
 @import './scss/base/normalize.scss';
 @import './scss/base/globals.scss';
-@import './scss/base/mixins.scss';
 @import './scss/base/utilities.scss';
 
 //* Layout
@@ -30,3 +30,4 @@
 @import './scss/layout/chat/chatBg.scss';
 //* Settings
 @import './scss/layout/settings/userProfile.scss';
+@import './scss/layout/settings/options.scss';

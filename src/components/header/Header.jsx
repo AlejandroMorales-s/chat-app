@@ -12,8 +12,8 @@ export default function Header({title}) {
                     <h2>{title}</h2>
                 </div>
                 <div className='hamburger-menu-container'>
-                    <GiHamburgerMenu 
-                        onClick={e => setShowingMenu(!showingMenu)} 
+                    <GiHamburgerMenu
+                        onClick={e => setShowingMenu(!showingMenu)}
                         className={`${showingMenu && 'active-menu'} hamburger-menu-icon`}
                     />
                     <HamburgerMenu hide={showingMenu}/>
