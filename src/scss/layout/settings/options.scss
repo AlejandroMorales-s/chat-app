@@ -1,0 +1,43 @@
+.settings-options-container{
+    width: 90%;
+    margin: $spacing auto;
+    display: flex;
+    gap: calc($spacing / 2);
+    flex-direction: column;
+    .settings-option{
+        display: flex; 
+        gap: 1rem;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            .settings-option-icon{
+                fill: $primary;
+            }
+            div{
+                .dark-mode-status{
+                    color: $primary;
+                }
+                p{
+                    color: $primary;
+                }
+            } 
+        }
+        .settings-option-icon{
+            font-size: 1.8rem;
+            @include transition(all);
+        }
+        div{
+            .dark-mode-status,
+            .font-size-status{
+                font-size: 1.2rem;
+                @include transition(all);
+                color: $darkGray;
+            }
+            p{
+                font-weight: $medium;
+                @include transition(all);
+            }
+        } 
+            
+    }
+}

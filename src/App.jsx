@@ -1,5 +1,5 @@
 import './App.scss';
-import theme from './localStorage';
+import {appTheme} from './localStorage';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Login from './pages/Login'
 import Chats from './pages/Chats'
@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    theme(localStorage.getItem('theme'));
+    appTheme(localStorage.getItem('theme'));
   }, [])
   
   return (
