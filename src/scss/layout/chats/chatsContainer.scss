@@ -1,8 +1,3 @@
 .chats-container{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 0;
+    @include container;
 }

@@ -1,0 +1,18 @@
+.users-container{
+    @include container;
+}
+.user{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    .user-avatar-container{
+        @include avatarContainer;
+    }
+    h3{
+        width: 100%;
+    }
+    .user-button{
+        @include secondaryBtn;
+    }
+}

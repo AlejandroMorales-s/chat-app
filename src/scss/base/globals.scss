@@ -41,7 +41,8 @@ body{
 .dark-mode .user-message{
     background-color: #0f1729;
 }
-.dark-mode {
+.dark-mode,
+.dark-mode .navbar-container{
     background-color: #0a0f1c;
 }
 .dark-mode #chat-bg{
